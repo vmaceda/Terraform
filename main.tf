@@ -3,15 +3,11 @@ provider "azurerm" {
 }
 
 resource "azurerm_resource_group" "rg" {
-  name = "myTFResourceGroup"
+  name     = "myTFResourceGroup"
   location = "eastus"
-
   tags = {
-    Environment = "Prod"
+    Environment   = "Prod"
     "Cost Center" = "6100"
-    Department = "Technology"
+    Department    = "Technology"
   }
-
 }
-
-
